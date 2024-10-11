@@ -1,0 +1,454 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: steelblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#a1{
+    font-size: larger;
+}
+
+#abc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0 15px;
+}
+
+#btn:hover{
+    background-color:steelblue;
+
+}
+
+button {
+    padding: 10px;
+    background-color:grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b494a;
+    box-shadow: 0 0 5px cyan,0 0 20px cyan;
+}
+
+#a1{
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+#a2{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+   }
+
+.name{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+ h1{
+    text-decoration: underline;
+ }  
+
+#registered-students {
+    display: flex;
+    flex-direction: row;
+   /* background-color:lightslategray;*/
+   background-image: conic-gradient(#6300BEFF,rgb(98, 93, 160),deeppink,#8688F5FF,rgb(231, 164, 63),#28ACFFFF,#A297F7FF,#6300BEFF);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width:45%;
+    height: 450px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+    #studentRecords {
+        margin-top: 20px;
+        max-height: 400px; /* Increased height for better visibility */
+        overflow-y: auto;
+        background:lightslategray; ;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width:800px;
+    }
+
+#student-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+#student-list  th,#student-list td {
+    border: 1px solid WHITE;
+    padding: 8px;
+
+} 
+
+#student-list th {
+    background-color: slategray;
+}
+
+.student-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#registration-form{
+   /*  background-image: conic-gradient(  yellow,deeppink,lightgreen,skyblue); */
+    background-image: conic-gradient(deeppink,rgb(98, 93, 160),rgb(199, 75, 121),#28ACFFFF,#8688F5FF,rgb(231, 164, 63),#6300BEFF,#A297F7FF,deeppink);
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin-left: 10px ;
+    margin-right: 10px;
+    height: 455px;
+    margin-top:60px;
+}
+
+table{
+    th,td{
+    padding-left:5px;
+    padding-right: 5px;
+    margin:10px,10px , 10px,10px;
+}}
+
+form{
+    background: rgb(118, 198, 216);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn{
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 4px;
+    height:40px;
+    width: 130px;
+    
+}
+
+#a{
+    width:500px;
+}
+#b{
+    width:500px;
+}
+#c{
+    width:500px;
+}
+#d{
+    width:500px;
+}
+
+/* Small laptops (up to 1366px) */
+@media (max-width: 1366px) {
+    body {
+        font-size: 15px;
+        background-color: rgb(85, 82, 84); /* Example background change */
+    }
+    table{
+        th,td{
+        padding-left:5px;
+        padding-right: 5px;
+        margin:10px,10px , 10px,10px;
+    }}
+}
+
+/* Tablets (between 600px and 900px) */
+@media (max-width: 900px) {
+    body {
+        font-size: 14px;
+        background-color: #656658;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    table{
+        th,td{
+        padding-left:5px;
+        padding-right: 5px;
+        margin:10px,10px , 10px,10px;
+    }}
+
+    #a,#b,#c,#d{
+        width:200px;
+    }
+
+
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+
+    }
+    
+    /* Additional styles for tablets */
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Smartphones (up to 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+        background-color: #685a6b;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+    #a,#b,#c,#d{
+        width:100px;
+    }
+
+    
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    /* Adjusting layout for smaller screens */
+    .container {
+        padding: 5px;
+        flex-direction: column; /* Stacking elements */
+    }
+}
+
+
+@media (max-width:1024px){
+    body {
+        font-size: 12px;
+        background-color: #4b5251;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #a,#b,#c,#d{
+        width:300px;
+    }
+
+    
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    /* Adjusting layout for smaller screens */
+    .container {
+        padding: 5px;
+        flex-direction: column; /* Stacking elements */
+    }
+} 
+
+@media (max-width:320px){
+    body {
+        font-size: 12px;
+        background-color: #3c344d;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #a,#b,#c,#d{
+        width:80px;
+    }
+
+    
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    /* Adjusting layout for smaller screens */
+    .container {
+        padding: 5px;
+        flex-direction: column; /* Stacking elements */
+    }
+} 
+
+@media (max-width:475px){
+    body {
+        font-size: 12px;
+        background-color: #6b4b4b;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    table{
+        th,td{
+        display: flex;
+        flex-direction:column;
+        text-overflow: none;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        border-spacing: 20px,0;
+    }}
+
+    #a,#b,#c,#d{
+        width:80px;
+    }
+
+    
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    /* Adjusting layout for smaller screens */
+    .container {
+        padding: 5px;
+        flex-direction: column; /* Stacking elements */
+    }
+} 
+
+
+@media (max-width:425px){
+    body {
+        font-size: 12px;
+        background-color: #585a58;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    table{
+        th,td{
+        display: flex;
+        flex-direction:column;
+        text-overflow: none;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        border-spacing: 20px,0;
+    }}
+
+    #a,#b,#c,#d{
+        width:80px;
+    }
+
+    
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    /* Adjusting layout for smaller screens */
+    .container {
+        padding: 5px;
+        flex-direction: column; /* Stacking elements */
+    }
+} 
+
+
+
+@media (max-width: 1440px) {
+    body {
+        font-size: 14px;
+        background-color: #656658;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    table{
+        th,td{
+        padding-left:5px;
+        padding-right: 5px;
+        margin:10px,10px , 10px,10px;
+    }}
+
+    #a,#b,#c,#d{
+        width:200px;
+    }
+
+    h2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #registered-students {
+      
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+
+    }
+}
